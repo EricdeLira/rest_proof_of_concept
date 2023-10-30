@@ -21,6 +21,7 @@ export async function createUser(req: Request, res: Response) {
 export async function deleteUser(req: Request, res: Response) {
   try {
     const userId = req.params.id;
+    console.log(userId);
     if (userId) {
       return res
         .status(201)
@@ -37,6 +38,7 @@ export async function deleteUser(req: Request, res: Response) {
 export async function updateUser(req: Request, res: Response) {
   try {
     const userId = req.params.id;
+    console.log(userId);
     if (userId) {
       return res
         .status(201)
