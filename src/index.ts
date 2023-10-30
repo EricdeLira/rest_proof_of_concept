@@ -6,9 +6,10 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/v1/property", propertyRouter);
-app.use("/v1/users", userRouter);
+app.use("/api/v1/property", propertyRouter);
+app.use("/api/v1/user", userRouter);
 
 app.listen("8080", () => {
   console.log("App is running on http://localhost:8080");
+  return;
 });
