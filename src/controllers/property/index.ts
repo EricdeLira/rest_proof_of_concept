@@ -23,6 +23,7 @@ export async function createProperty(req: Request, res: Response) {
 export async function deleteProperty(req: Request, res: Response) {
   try {
     const propertyId = req.params.id;
+    console.log(propertyId);
     if (propertyId) {
       return res
         .status(201)
@@ -39,6 +40,7 @@ export async function deleteProperty(req: Request, res: Response) {
 export async function updateProperty(req: Request, res: Response) {
   try {
     const propertyId = req.params.id;
+    console.log(propertyId);
     if (propertyId) {
       return res
         .status(201)
